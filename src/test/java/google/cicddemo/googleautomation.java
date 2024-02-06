@@ -14,9 +14,9 @@ public class googleautomation {
 public static void launch() throws InterruptedException
 {
 		// TODO Auto-generated method stub
-		WebDriverManager.firefoxdriver().setup();
-		WebDriver driver =new FirefoxDriver();
-		driver.get("https://.cm/");
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 				
